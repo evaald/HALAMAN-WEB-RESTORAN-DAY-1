@@ -36,7 +36,7 @@
 .content {
     background-color: rgb(255, 217, 150);
     color: rgb(117, 87, 35);
-    padding: 100px;
+    padding: 50px;
     margin: 0 auto;
 }
 
@@ -45,6 +45,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+.menu-container h1 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 75px;
+}
+
 
 .menu-items {
     display: flex;
@@ -78,12 +85,13 @@
     background-color: white;
     padding: 10px 20px; 
     border-radius: 20px; 
+    margin-top: 50px;
 }
 
 .footer {
     background-color: rgb(36, 25, 6);
     color: white;
-    padding: 100px; 
+    padding: 30px; 
     text-align: center;
     margin: 0 auto;
 }
@@ -94,11 +102,11 @@
 }
 
 .footer h1 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .footer p {
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 0; 
 }
 
