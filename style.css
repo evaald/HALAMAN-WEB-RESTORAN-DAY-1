@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+  }
+
+.header {
+    background-image: url(Desain\ tanpa\ judul\ \(5\).png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    color: white;
+    padding: 200px; 
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+}
+
+.header, div, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: rgb(255, 217, 150);
+    color: rgb(117, 87, 35);
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-align: center;
+    max-width: 300px; 
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #555; 
+}
+
+.menu-box {
+    background-color: white;
+    padding: 10px 20px; 
+    border-radius: 20px; 
+}
+
+.footer {
+    background-color: rgb(36, 25, 6);
+    color: white;
+    padding: 100px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.footer h1 {
+    font-size: 36px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 10px 0; 
+}
+
+
