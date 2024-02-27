@@ -140,6 +140,14 @@ nav>p>a:hover {
     margin: 10px 0; 
 }
 
+.video-content {
+    align-items: center;
+}
+
+video {
+    width: 50%;
+    height: auto;
+}
 /* Media query untuk tampilan mobile */
 @media only screen and (max-width: 600px) {
 
@@ -209,5 +217,10 @@ nav>p>a:hover {
 
     .footer p {
         font-size: 10px; /* Menyesuaikan ukuran font pada teks footer untuk tampilan mobile */
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 }

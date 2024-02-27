@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="menu">
+    <nav class ="d-flex flex-row justify-content-end">
+            <p><a href="menu.html" class="link-light link-underline-opacity-0 p-4 ">Menu</a></p>
+            <p><a href="#" class="link-light link-underline-opacity-0 p-4">Store</a></p>
+            <p><a href="beranda.html" class="link-light link-underline-opacity-0 p-4">Home</a></p>
+      </nav>
+    <div class="judul-content">
+        <h1 class="fst-italic fm-1 fw-bold" style="font-size: 60px;">Store</h1>
+    </div>
+    <div class="video-content ">
+        <video src="Bread Basket - Advertisement Video.mp4" class="object-fit-fill p-3" autoplay loop></video>
+    </div>
+    <div class="geolocation">
+        <h1 class="fst-italic fm-1 fw-bold p-3" style="font-size: 30px; color:white;">Geolocation Your Location</h1>
+            <p><b class="fst-italic fm-1 fw-bold" style="font-size: 20px; color:white;"> Displaying Latitude and Longitude</b></p>
+            <button type="button" class="btn btn-light  p-3 m-3" onclick="getlocation()">Click Me</button>
+            <p class="fst-italic fm-1 fw-bold" style="font-size: 20px; color:white;" id="paraID"></p>
+            <p class="fst-italic fm-1 fw-bold" style="font-size: 20px; color:white;" id="paraID1"></p>
+    </div>  
+   
+    <div>
+        <h1 class="fst-italic fm-1 fw-bold p-2" style="font-size: 60px; color:white;">Review</h1> 
+        <div class=" p-3" style="align-items: center;">
+            <div class="card p-3 m-2">
+                <h5 class="card-header">Anonymus</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Review Bakery Restaurant</h5>
+                  <p class="card-text">Rotinya enak2 banget suka paraaaah </p>
+                </div>
+            </div>
+            <div class="card p-3 m-2">
+                <h5 class="card-header">Anonymus</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Review Bakery Restaurant</h5>
+                  <p class="card-text">Tempatnya nyaman bangeet. apalagi buat foto-foto instragamable banget</p>
+                </div>
+            </div>
+            <div class="card p-3 m-2">
+                <h5 class="card-header">Anonymus</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Review Bakery Restaurant</h5>
+                  <p class="card-text">krene banget tempatnya parah. Hawanya sejuk disinii. viewnya pas malem bagus banget sukaaa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <h1>Contact Us</h1>
+            <p>Email: info@bakeryrestaurant.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Bakery Street, Cityville</p>
+        </div>
+    </div>
+
+    <script>
+        var variable1 = document.getElementById("paraID");
+        var variable2 = document.getElementById("paraID1");
+ 
+        // This function will get your current location
+        function getlocation() {
+            navigator.geolocation.watchPosition(showLoc);
+        }
+ 
+        // This function will show your current location
+        function showLoc(pos) {
+            variable1.innerHTML = "Latitude: " +
+                pos.coords.latitude;
+ 
+            variable2.innerHTML = "Longitude: " +
+                pos.coords.longitude;
+        }
+    </script>
+
+   
+    
+</body>
+</html>
